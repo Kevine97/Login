@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <style>
+    h1,
+    h2 {
+      color: white;
+    }
+    h1 {
+      font-size: 46px;
+      animation-duration: 3s;
+      animation-name: heart;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    @keyframes heart {
+      from {
+        transform: scale(1);
+      }
+
+      to {
+        transform: scale(2);
+      }
+    }
+    .container {
+      background: linear-gradient(#21c08b, #ab88ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0px 30px;
+      min-height: calc(100vh);
+    }
+  </style>
+
+  <body>
+    <header class="header">
+      <img class="header_img" src="./logo-platzi.png" />
+    </header>
+    <section class="container">
+      <h1>404</h1>
+      <h2>Pagina no encontrada</h2>
+    </section>
+    <footer class="footer">
+      <a href="/">Terms and conditions</a>
+      <a href="/">Terms of privacy</a>
+      <a href="/">Help</a>
+    </footer>
+  </body>
+</html>
